@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1199px) {
+  .container {
+    max-width: 95%;
+    margin: auto;
+    padding-inline: 3rem;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .feature-icon {
+    width: 3rem;
+    height: 3rem;
+    padding: 2.8rem;
+  }
+}
