@@ -12,10 +12,11 @@ html {
 body {
   font-family: sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: auto;
   padding-inline: 1.5rem;
 }
@@ -52,4 +53,4 @@ body {
 .btn:hover,
 .btn:active {
   transform: scale(1.05);
-}/*# sourceMappingURL=general.css.map */
+}
