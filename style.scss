@@ -50,6 +50,7 @@ header {
 }
 .btn-mobile-nav {
   display: none;
+  outline: none;
 }
 
 // **********************************
@@ -319,6 +320,9 @@ footer {
   background-color: #000;
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+.logo--footer {
+  margin-bottom: 3rem !important;
 }
 .footer-col {
   header {

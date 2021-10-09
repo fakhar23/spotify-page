@@ -199,6 +199,10 @@
     padding: 1.5rem;
     margin-bottom: 5rem;
   }
+  .btn-student:link,
+  .btn-student:visited {
+    padding: 0.8rem 1.6rem;
+  }
 }
 @media only screen and (max-width: 500px) {
   body {
