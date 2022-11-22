@@ -174,6 +174,10 @@ h2 {
 .plan-button-box {
   grid-row: 3;
 }
+.plan-button-box a {
+  display: table !important;
+  margin: auto !important;
+}
 .tandc {
   grid-row: 4;
 }
@@ -204,6 +208,11 @@ h2 {
     font-weight: 400;
     line-height: 2.2rem;
   }
+}
+.tag-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .tag {
   font-size: 1.4rem;
@@ -256,10 +265,11 @@ btn-plan:visited {
   justify-self: normal;
   align-self: center;
   align-items: center;
+  transition: all 1s;
 }
 .btn-plan:hover,
 .btn-plan:active {
-  transform: scale(1) !important;
+  transform: scale(1.05);
 }
 .tandc-wrapper {
   background-color: #fff;
@@ -303,6 +313,7 @@ btn-plan:visited {
 footer {
   background-color: #000;
   padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 .footer-col {
   header {
@@ -317,9 +328,18 @@ footer {
   flex-direction: column;
   gap: 2rem;
 }
-.footer-nav-item {
+
+.footer-nav-item a:link,
+.footer-nav-item a:visited {
   font-size: 1.6rem;
   color: #fff;
+  text-decoration: none;
+}
+.footer-socail-icon:hover,
+.footer-socail-icon:active,
+.footer-nav-item a:hover,
+.footer-nav-item a:active {
+  color: $green;
 }
 .footer-socail-icons {
   display: flex;
