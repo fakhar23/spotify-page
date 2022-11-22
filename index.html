@@ -16,9 +16,10 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="nav.js" defer></script>
   </head>
   <body>
-    <header>
+    <header class="">
       <div class="container">
         <nav class="main-nav">
           <a href="#">
@@ -39,6 +40,20 @@
               </ul>
             </li>
           </ul>
+          <button class="btn-mobile-nav">
+            <ion-icon
+              class="icon-mobile-nav"
+              name="menu-outline"
+              role="img"
+              aria-label="menu outline"
+            ></ion-icon>
+            <ion-icon
+              class="icon-mobile-nav"
+              name="close-outline"
+              role="img"
+              aria-label="close outline"
+            ></ion-icon>
+          </button>
         </nav>
       </div>
     </header>
@@ -49,8 +64,10 @@
           <p class="hero-description">
             Just Rs 299.00/month after. Cancel anytime.
           </p>
-          <a href="#" class="btn btn-full">get started</a>
-          <a href="#" class="btn btn-ghost">view plans</a>
+          <div class="btn-header-wrapper">
+            <a href="#" class="btn btn-full btn-header">get started</a>
+            <a href="#" class="btn btn-ghost btn-header">view plans</a>
+          </div>
           <p class="dis">
             <a href="#">Terms and conditions apply.</a>
             1 month free not available for users who have already tried Premium.

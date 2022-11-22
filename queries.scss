@@ -115,7 +115,7 @@
     justify-content: start;
   }
 }
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 780px) {
   body {
     font-size: 56.25%;
   }
@@ -126,5 +126,93 @@
   .footer-col,
   .logo {
     margin-bottom: 5rem;
+  }
+  .features {
+    display: block;
+  }
+  .logo {
+    margin-bottom: 0;
+  }
+  .nav-open .main-nav-list {
+    transform: translatex(0);
+    pointer-events: auto;
+    visibility: visible;
+    right: 0;
+  }
+  .main-nav-list {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100vh;
+    transform: translateX(100%);
+    justify-content: center;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s;
+    z-index: 2;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .icon-mobile-nav[name="menu-outline"] {
+  }
+  .icon-mobile-nav[name="close-outline"] {
+    display: none;
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: flex;
+  }
+
+  .student-discount {
+    display: block;
+    line-height: 2;
+  }
+  .btn-mobile-nav {
+    display: unset;
+    z-index: 10;
+    background-color: #000;
+  }
+  .btn-mobile-nav ion-icon {
+    color: #fff;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+@media only screen and (max-width: 730px) {
+  // .btn-header-wrapper {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 1.8rem;
+  // }
+  .btn-header {
+    margin-left: 0 !important;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 1.8rem;
+  }
+  .feature-icon {
+    padding: 1.5rem;
+    margin-bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 50%;
+  }
+  .btn-header {
+    width: 100%;
+  }
+  .tag-wrapper {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .main-nav-list {
+    width: 100%;
   }
 }
